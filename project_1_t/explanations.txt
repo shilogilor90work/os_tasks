@@ -1,0 +1,17 @@
+subtask 1:
+    1.1 made hello_ariel.h and hello_ariel.c
+    1.2 in hello_ariel.c we wrote the hello world main1_1 function
+    1.3 we made the make file to compile.
+
+subtask 2:
+    2.1 we ran:     gcc -shared -o hello_ariel.so -fPIC hello_ariel.c
+    2.2 we wrote the file main1_2.c
+    2.3 we updated the makefile to support also lib itself
+
+subtask 3:
+    3.1 we wrote the main1_3.c
+    3.2 we cahnged the makefile to support main1_3
+
+subtask 4:
+    4.1 we ran a few test runs
+    4.2 we changed the make file to support clean and all
