@@ -13,12 +13,14 @@ int main() {
     if (pid==0) {
         pid_t pid = fork();
         if (pid==0) {
-            print("grand child");
+            char* args[2] = {"./process2", NULL};
+            execvp(args[0], args);
         } else {
-            print("child");
+            char* args[2] = {"./process1", NULL};
+            execvp(args[0], args);
         }
     } else {
-        print("parent");
+        print("App");
     }
     return 0;
 }
