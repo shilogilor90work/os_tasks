@@ -1,0 +1,19 @@
+subtask 1:
+    we wrote the files App.c process1.c process2.c and makefile to compile it.
+    then in bash we ran "make all"
+    then we ran "echo $$" to get the process id.
+    and in other window we ran "pstree <number of process id>"
+
+subtask 2:
+    we wrote the files App.c and makefile to compile it.
+    then in bash we ran "make all"
+    then we ran "echo $$" to get the process id.
+    and in other window we ran "pstree <number of process id>"
+
+subtask 3:
+    3.1 we wrote the main1_3.c
+    3.2 we cahnged the makefile to support main1_3
+
+subtask 4:
+    4.1 we ran a few test runs
+    4.2 we changed the make file to support clean and all
