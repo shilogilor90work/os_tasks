@@ -21,8 +21,6 @@ int child(void *parmas)
 }
 
 int main() {
-    // int result =clone(child,child_stack+STACK_SIZE,0,0);
-
     int result =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
     int result2 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
     print("parent_thread");
