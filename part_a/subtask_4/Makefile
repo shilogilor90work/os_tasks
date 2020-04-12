@@ -7,7 +7,8 @@ lib: hello_ariel.c hello_ariel.h
 	gcc -shared hello_ariel.c -fPIC -o libhello.so
 
 run:
-	strace ./hello3 >> log_strace.txt
-	ltrace ./hello3 >> log_ltrace.txt
+	strace -o log_strace.txt ./hello3
+	ltrace -o log_ltrace.txt ./hello3
+
 clean:
 	-rm hello3 libhello.so
