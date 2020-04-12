@@ -17,5 +17,4 @@ subtask 3:
     and in other window we ran "ps -xj | grep <number of process id>"
 
 subtask 4:
-    4.1 we ran a few test runs
-    4.2 we changed the make file to support clean and all
+    
