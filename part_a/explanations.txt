@@ -13,5 +13,5 @@ subtask 3:
     3.2 we cahnged the makefile to support main1_3
 
 subtask 4:
-    4.1 we ran a few test runs
+    4.1 we added the run for the makefile and save the log in txt files
     4.2 we changed the make file to support clean and all

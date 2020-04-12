@@ -1,7 +1,7 @@
-all: task1 task2
+all: task2
 
-task1: hello_ariel.c hello_ariel.h main1_1.c
-	gcc -o hello1 hello_ariel.c main1_1.c
+run:
+	./hello2
 
 task2: hello_ariel.h main1_1.c lib
 	gcc main1_1.c -L. -l hello -o hello2
@@ -10,4 +10,4 @@ lib: hello_ariel.c hello_ariel.h
 	gcc -shared hello_ariel.c -fPIC -o libhello.so
 
 clean:
-	-rm hello1 hello2 libhello.so
+	-rm hello2 libhello.so

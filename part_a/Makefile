@@ -1,5 +1,10 @@
 all: task1 task2 task3
 
+run:
+	./hello1
+	./hello2
+	./hello3
+
 task1: hello_ariel.c hello_ariel.h main1_1.c
 	gcc -o hello1 hello_ariel.c main1_1.c
 
