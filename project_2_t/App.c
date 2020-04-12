@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stddlib.h>
+#include <stdlib.h>
 
-void print(onst vhar *text) {
+void print(const vhar *text) {
     int i;
     for (i=0;i<3;i++) {
         printf("hi %s\n", text);
