@@ -43,8 +43,8 @@ int main() {
     print("parent_thread");
 
     // part 3
-    pid_t pid = fork();
-    if (pid==0) {
+    pid_t pid3 = fork();
+    if (pid3==0) {
         chdir("/");
         setsid();
         printf("starting daemon");
