@@ -15,6 +15,7 @@ subtask 3:
     then in bash we ran "make all"
     then we got the process id from the prints
     and in other window we ran "ps -xj | grep <number of process id>"
+    to check we can view log 
 
 subtask 4:
     we built an app that does all 3 subtasks
