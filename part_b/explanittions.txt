@@ -17,4 +17,5 @@ subtask 3:
     and in other window we ran "ps -xj | grep <number of process id>"
 
 subtask 4:
-    
+    we built an app that does all 3 subtasks
+    we added screen shots of needed runs
