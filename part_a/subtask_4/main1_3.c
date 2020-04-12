@@ -24,7 +24,7 @@ int main() {
         hello_ariel();
     }
     else {
-        printf("lib not created yet!");
+        printf("lib not created yet!\n");
     }
     return 0;
 }

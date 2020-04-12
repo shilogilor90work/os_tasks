@@ -2,5 +2,5 @@
 
 void hello_ariel()
 {
-    printf("Hello Ariel");
+    printf("Hello Ariel\n");
 }
