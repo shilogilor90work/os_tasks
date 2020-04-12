@@ -11,8 +11,11 @@ subtask 2:
     and in other window we ran "pstree <number of process id>"
 
 subtask 3:
-    3.1 we wrote the main1_3.c
-    3.2 we cahnged the makefile to support main1_3
+    we wrote the files App.c and makefile to compile it.
+    then in bash we ran "make all"
+    then we got the process id from the prints
+    and in other window we ran "pstree <number of process id>"
+    "ps -xj | grep <number of process id>"
 
 subtask 4:
     4.1 we ran a few test runs
