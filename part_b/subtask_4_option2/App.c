@@ -58,7 +58,7 @@ int task_3(void *parmas)
         usleep(5000000);
         syslog(LOG_NOTICE, "finished");
     } else {
-        printf("Daemon PID %d\n", pid3);
+        print("Daemon PID %d\n", pid3);
     }
     return 0;
 }
