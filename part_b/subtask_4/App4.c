@@ -72,7 +72,7 @@ int task_3(void *parmas)
         syslog(LOG_NOTICE, "finished");
 
     } else {
-        print("Daemon PID %d\n", pid3);
+        print(pid3);
     }
     return 0;
 }
