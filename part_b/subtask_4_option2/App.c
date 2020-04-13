@@ -57,8 +57,8 @@ int task_3(void *parmas)
         syslog(LOG_NOTICE, "doing....");
         usleep(5000000);
         syslog(LOG_NOTICE, "finished");
-    } else {    
-        for (i=0;i<25;i++) {
+    } else {
+        for (int i=0;i<25;i++) {
             print("Daemon PID %d\n", pid3);
             usleep(1000000);
         }
