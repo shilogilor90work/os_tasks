@@ -37,18 +37,10 @@ int task_1(void *parmas)
     } else {
         print("App");
     }
-
+    return 0;
 }
-
-int main() {
-
-    // part 2
-    int result =clone(task_1,child_stack+STACK_SIZE,CLONE_PARENT,0);
-    int result2 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
-    int result3 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
-    print("parent_thread");
-
-    // part 3
+int task_3(void *parmas)
+{
     pid_t pid3 = fork();
     if (pid3==0) {
         chdir("/");
@@ -68,6 +60,15 @@ int main() {
     } else {
         printf("Daemon PID %d\n", pid3);
     }
+    return 0;
+}
+int main() {
 
+    // part 2
+    int result4 =clone(task_3,child_stack+STACK_SIZE,CLONE_PARENT,0);
+    int result =clone(task_1,child_stack+STACK_SIZE,CLONE_PARENT,0);
+    int result2 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
+    int result3 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
+    print("parent_thread");
     return 0;
 }
