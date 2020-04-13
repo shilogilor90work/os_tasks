@@ -11,7 +11,7 @@ char child_stack[STACK_SIZE + 1];
 
 void print(const char *text) {
     int i;
-    for (i=0;i<3;i++) {
+    for (i=0;i<25;i++) {
         printf("hi %s\n", text);
         usleep(1000000);
     }
@@ -61,9 +61,9 @@ int main() {
 
         openlog("daemon", LOG_PID, LOG_DAEMON);
         syslog(LOG_NOTICE, "started");
-        usleep(3000000);
+        usleep(5000000);
         syslog(LOG_NOTICE, "doing....");
-        usleep(3000000);
+        usleep(5000000);
         syslog(LOG_NOTICE, "finished");
     } else {
         printf("Daemon PID %d\n", pid3);
