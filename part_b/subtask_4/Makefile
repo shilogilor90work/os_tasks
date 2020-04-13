@@ -12,9 +12,7 @@ task3:App3.c
 	gcc -o App3 App3.c
 
 run:
-	./App1
-	./App2
-	./App3
+	./App4
 
 clean:
 	-rm App1 App2 App3 process1 process2
