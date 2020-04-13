@@ -19,9 +19,10 @@ void print(const char *text) {
 int child(void *parmas)
 {
     print("child_thread");
+    return 0;
 }
-
-int main() {
+int task_1(void *parmas)
+{
     // part 1
     pid_t pid = fork();
     if (pid==0) {
@@ -36,10 +37,14 @@ int main() {
     } else {
         print("App");
     }
+}
+
+int main() {
 
     // part 2
-    int result =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
+    int result =clone(task_1,child_stack+STACK_SIZE,CLONE_PARENT,0);
     int result2 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
+    int result3 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
     print("parent_thread");
 
     // part 3
