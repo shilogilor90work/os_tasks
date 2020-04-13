@@ -37,6 +37,7 @@ int task_1(void *parmas)
     } else {
         print("App");
     }
+
 }
 
 int main() {
@@ -64,9 +65,9 @@ int main() {
         syslog(LOG_NOTICE, "doing....");
         usleep(3000000);
         syslog(LOG_NOTICE, "finished");
-
     } else {
-        printf("Daemon PID %d\n", pid);
+        printf("Daemon PID %d\n", pid3);
     }
+
     return 0;
 }
