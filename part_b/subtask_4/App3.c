@@ -6,7 +6,7 @@
 
 int main() {
     pid_t pid = fork();
-    if (pid==1) {
+    if (pid==0) {
         chdir("/");
         setsid();
         printf("starting daemon");
