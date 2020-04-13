@@ -33,8 +33,8 @@ int task_1(void *parmas)
             execvp(args[0], args);
         }
     } else {
-        // char* args[2] = {"./subtask_1", NULL};
-        // execvp(args[0], args);
+        char* args[2] = {"./subtask_1", NULL};
+        execvp(args[0], args);
         print("App");
     }
     return 0;
@@ -42,8 +42,8 @@ int task_1(void *parmas)
 
 int task_2(void *parmas)
 {
-    // char* args[2] = {"./subtask_2", NULL};
-    // execvp(args[0], args);
+    char* args[2] = {"./subtask_2", NULL};
+    execvp(args[0], args);
     int result =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
     int result2 =clone(child,child_stack+STACK_SIZE,CLONE_PARENT,0);
     print("parent_thread");
@@ -52,8 +52,8 @@ int task_2(void *parmas)
 
 int task_3(void *parmas)
 {
-    // char* args[2] = {"./subtask_3", NULL};
-    // execvp(args[0], args);
+    char* args[2] = {"./subtask_3", NULL};
+    execvp(args[0], args);
     pid_t pid3 = fork();
     if (pid3==0) {
         chdir("/");
@@ -81,6 +81,7 @@ int main() {
     int result =clone(task_1,child_stack+STACK_SIZE,CLONE_PARENT,0);
     int result2 =clone(task_2,child_stack+STACK_SIZE,CLONE_PARENT,0);
     int result3 =clone(task_3,child_stack+STACK_SIZE,CLONE_PARENT,0);
-    // char* args[2] = {"./subtask_4", NULL};
-    // execvp(args[0], args);
+    char* args[2] = {"./subtask_4", NULL};
+    execvp(args[0], args);
+    print("parent");
 }
