@@ -4,14 +4,6 @@
 #include <stdlib.h>
 #include <syslog.h>
 
-void print(const char *text) {
-    int i;
-    for (i=0;i<25;i++) {
-        printf("hi %s\n", text);
-        usleep(1000000);
-    }
-}
-
 int main() {
     pid_t pid = fork();
     if (pid==0) {
@@ -31,7 +23,11 @@ int main() {
         syslog(LOG_NOTICE, "finished");
 
     } else {
-        print(("Daemon PID %d\n", pid));
+        int i;
+        for (i=0;i<25;i++) {
+            printf("Daemon PID %d\n", pid);
+            usleep(1000000);
+        }
     }
     return 0;
 }
